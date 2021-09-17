@@ -18,6 +18,7 @@ public class PlayerCounter : UdonSharpBehaviour {
       timer += Time.deltaTime;
       if (timer > waitTime) {
         UpdateCount();
+        shouldUpdate = false;
         timer = 0.0f;
       }
     }
